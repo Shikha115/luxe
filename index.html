@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/variable.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>CA Services Online :-Company Registration, ITR Filling & Licensing Services in Delhi India</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="topbar">
+            <div class="container-fluid">
+                <div class="row topbar-inner">
+                    <div class="col-12 col-md-4">
+                        <nav class="navbar logo">
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="topbar-right">
+                            <div class="topbar-info">
+                                <ul>
+                                    <li><i class="fas fa-phone-alt"></i><a href="tel:9990061912">9990061912</a></li>
+                                    <li><i class="far fa-envelope"></i>info@luxefinalyzer.com</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="topbar-button">
+                                <form>
+                                    <button type="button" class="btn btn-one">offer</button>
+                                    <button type="button" class="btn btn-two"><i class="fas fa-handshake"></i>Partner</button>
+                                    <button type="button" class="btn btn-two">Pay With PayU</button>
+                                    <button type="button" class="btn btn-two">pay with paytm</button>
+                                </form>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">our services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">why us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">clientele</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="verify.html">verify</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="carousel-sec">
+            <div class="owl-carousel main-carousel owl-theme">
+                <div class="item">
+                    <div class="slider-sec">
+                        <div class="container">
+                            <div class="row slider-inner">
+                                <div class="col-12 col-md-6 col-adjust">
+                                    <div class="slider-left">
+                                        <h3>GET ISO 9001 CERTIFICATION FOR RS 2000/- ONLY</h3>
+                                        <p>India’s leading ISO Certification Provider, We can help you to get your business ISO Certified.</p>
+                                        <ul>
+                                            <li><i class="fas fa-angle-double-right"></i>10 years experience in ISO Certification</li>
+                                            <li><i class="fas fa-angle-double-right"></i>Best Service & Lowest Price Guaranteed</li>
+                                            <li><i class="fas fa-angle-double-right"></i>100% Money Back Guarantee</li>
+                                            <li><i class="fas fa-angle-double-right"></i>Our Certificate valid in Tender & Internationally</li>
+                                            <li><i class="fas fa-angle-double-right"></i>100% Secure Customer Privacy & Data Protection System.</li>
+                                            <li><i class="fas fa-angle-double-right"></i>No Hidden Costs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-adjust">
+                                    <div class="slider-right">
+                                        <h4>Fill Form To Get Free Sample</h4>
+                                        <form action="{{url('enquiry')}}" method="post">
+                                            @csrf
+                                            <input type="hidden" name="type" value="0">
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                                <input type="text" placeholder="Name" name="name" required="">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="far fa-envelope"></i>
+                                                </div>
+                                                <input type="email" placeholder="Email" name="email" required="">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-phone-alt"></i>
+                                                </div>
+                                                <input type="tel" placeholder="Phone" required="" name="phone">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                </div>
+                                                <input type="text" placeholder="Company Name" name="company" required="">
+                                            </div>
+                                            <select name="standard" class="form-control mb-3">
+                                                <option>Select Certifcate Standard</option>
+                                                <option value="ISO 9001:2015">ISO 9001:2015</option>
+                                                <option value="ISO 14001:2015">ISO 14001:2015</option>
+                                                <option value="OHSAS">OHSAS</option>
+                                                <option value="ISO/IEC">ISO/IEC</option>
+                                                <option value="ISO 27001:2013">ISO 27001:2013</option>
+                                                <option value="ISO 29990:2010">ISO 29990:2010</option>
+                                                <option value="CE Marking">CE Marking </option>
+                                                <option value="ISO 22000">ISO 22000</option>
+                                                <option value="HACCP">HACCP</option>
+                                                <option value="GMP">GMP</option>
+                                                <option value="HALAL">HALAL</option>
+                                                <option value="Organic">Organic </option>
+                                                <option value="KOSHER">KOSHER </option>
+                                                <option value="RoHS">RoHS</option>
+                                                <option value="US FDA">US FDA</option>
+                                                <option value="SA 8000:2014">SA 8000:2014</option>
+                                                <option value="IATF 16949:2016">IATF 16949:2016</option>
+                                                <option value="ISO 50001:2011">ISO 50001:2011</option>
+                                                <option value="ISO 22716:2007">ISO 22716:2007</option>
+                                                <option value="ISO 15189:2012">ISO 15189:2012</option>
+                                                <option value="ISO 13485:2003">ISO 13485:2003</option>
+                                                <option value="ISO 15378:2017">ISO 15378:2017</option>
+                                            </select>
+
+                                            <button type="submit" class="btn btn-four">Submit Now</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-sec">
+                        <div class="container">
+                            <div class="row slider-inner">
+                                <div class="col-12 col-md-6 col-adjust">
+                                    <div class="slider-left">
+                                        <h3>GET ISO 9001 CERTIFICATION FOR RS 2000/- ONLY</h3>
+                                        <p>India’s leading ISO Certification Provider, We can help you to get your business ISO Certified.</p>
+                                        <ul>
+                                            <li><i class="fas fa-angle-double-right"></i>10 years experience in ISO Certification</li>
+                                            <li><i class="fas fa-angle-double-right"></i>Best Service & Lowest Price Guaranteed</li>
+                                            <li><i class="fas fa-angle-double-right"></i>100% Money Back Guarantee</li>
+                                            <li><i class="fas fa-angle-double-right"></i>Our Certificate valid in Tender & Internationally</li>
+                                            <li><i class="fas fa-angle-double-right"></i>100% Secure Customer Privacy & Data Protection System.</li>
+                                            <li><i class="fas fa-angle-double-right"></i>No Hidden Costs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-adjust">
+                                    <div class="slider-right">
+                                        <h4>Fill Form To Get Free Sample</h4>
+                                        <form action="{{url('enquiry')}}" method="post">
+                                            @csrf
+                                            <input type="hidden" name="type" value="0">
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                                <input type="text" placeholder="Name" name="name" required="">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="far fa-envelope"></i>
+                                                </div>
+                                                <input type="email" placeholder="Email" name="email" required="">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-phone-alt"></i>
+                                                </div>
+                                                <input type="tel" placeholder="Phone" required="" name="phone">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                </div>
+                                                <input type="text" placeholder="Company Name" name="company" required="">
+                                            </div>
+                                            <select name="standard" class="form-control mb-3">
+                                                    <option>Select Certifcate Standard</option>
+                                                                <option value="ISO 9001:2015">ISO 9001:2015</option>
+                                                                <option value="ISO 14001:2015">ISO 14001:2015</option>
+                                                                <option value="OHSAS">OHSAS</option>
+                                                                <option value="ISO/IEC">ISO/IEC</option>
+                                                                <option value="ISO 27001:2013">ISO 27001:2013</option>
+                                                                <option value="ISO 29990:2010">ISO 29990:2010</option>
+                                                                <option value="CE Marking">CE Marking </option>
+                                                                <option value="ISO 22000">ISO 22000</option>
+                                                                <option value="HACCP">HACCP</option>
+                                                                <option value="GMP">GMP</option>
+                                                                <option value="HALAL">HALAL</option>
+                                                                <option value="Organic">Organic </option>
+                                                                <option value="KOSHER">KOSHER </option>
+                                                                <option value="RoHS">RoHS</option>
+                                                                <option value="US FDA">US FDA</option>
+                                                                <option value="SA 8000:2014">SA 8000:2014</option>
+                                                                <option value="IATF 16949:2016">IATF 16949:2016</option>
+                                                                <option value="ISO 50001:2011">ISO 50001:2011</option>
+                                                                <option value="ISO 22716:2007">ISO 22716:2007</option>
+                                                                <option value="ISO 15189:2012">ISO 15189:2012</option>
+                                                                <option value="ISO 13485:2003">ISO 13485:2003</option>
+                                                                <option value="ISO 15378:2017">ISO 15378:2017</option>
+                                                            </select>
+
+                                            <button type="submit" class="btn btn-four">Submit Now</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-sec">
+                        <div class="container">
+                            <div class="row slider-inner">
+                                <div class="col-12 col-md-6 col-adjust">
+                                    <div class="slider-left">
+                                        <h3>GET ISO 9001 CERTIFICATION FOR RS 2000/- ONLY</h3>
+                                        <p>India’s leading ISO Certification Provider, We can help you to get your business ISO Certified.</p>
+                                        <ul>
+                                            <li><i class="fas fa-angle-double-right"></i>10 years experience in ISO Certification</li>
+                                            <li><i class="fas fa-angle-double-right"></i>Best Service & Lowest Price Guaranteed</li>
+                                            <li><i class="fas fa-angle-double-right"></i>100% Money Back Guarantee</li>
+                                            <li><i class="fas fa-angle-double-right"></i>Our Certificate valid in Tender & Internationally</li>
+                                            <li><i class="fas fa-angle-double-right"></i>100% Secure Customer Privacy & Data Protection System.</li>
+                                            <li><i class="fas fa-angle-double-right"></i>No Hidden Costs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-adjust">
+                                    <div class="slider-right">
+                                        <h4>Fill Form To Get Free Sample</h4>
+                                        <form action="{{url('enquiry')}}" method="post">
+                                            @csrf
+                                            <input type="hidden" name="type" value="0">
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                                <input type="text" placeholder="Name" name="name" required="">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="far fa-envelope"></i>
+                                                </div>
+                                                <input type="email" placeholder="Email" name="email" required="">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-phone-alt"></i>
+                                                </div>
+                                                <input type="tel" placeholder="Phone" required="" name="phone">
+                                            </div>
+                                            <div class="input-group mb-3 form-control">
+                                                <div class="input-group-prepend">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                </div>
+                                                <input type="text" placeholder="Company Name" name="company" required="">
+                                            </div>
+                                            <select name="standard" class="form-control mb-3">
+                                                    <option>Select Certifcate Standard</option>
+                                                                <option value="ISO 9001:2015">ISO 9001:2015</option>
+                                                                <option value="ISO 14001:2015">ISO 14001:2015</option>
+                                                                <option value="OHSAS">OHSAS</option>
+                                                                <option value="ISO/IEC">ISO/IEC</option>
+                                                                <option value="ISO 27001:2013">ISO 27001:2013</option>
+                                                                <option value="ISO 29990:2010">ISO 29990:2010</option>
+                                                                <option value="CE Marking">CE Marking </option>
+                                                                <option value="ISO 22000">ISO 22000</option>
+                                                                <option value="HACCP">HACCP</option>
+                                                                <option value="GMP">GMP</option>
+                                                                <option value="HALAL">HALAL</option>
+                                                                <option value="Organic">Organic </option>
+                                                                <option value="KOSHER">KOSHER </option>
+                                                                <option value="RoHS">RoHS</option>
+                                                                <option value="US FDA">US FDA</option>
+                                                                <option value="SA 8000:2014">SA 8000:2014</option>
+                                                                <option value="IATF 16949:2016">IATF 16949:2016</option>
+                                                                <option value="ISO 50001:2011">ISO 50001:2011</option>
+                                                                <option value="ISO 22716:2007">ISO 22716:2007</option>
+                                                                <option value="ISO 15189:2012">ISO 15189:2012</option>
+                                                                <option value="ISO 13485:2003">ISO 13485:2003</option>
+                                                                <option value="ISO 15378:2017">ISO 15378:2017</option>
+                                                            </select>
+
+                                            <button type="submit" class="btn btn-four">Submit Now</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="franchise text-center">
+            <div class="container">
+                <div class="franchise-inner">
+                    <div class="title-sec">
+                        <h3>Franchise</h3>
+                    </div>
+                    <p>Luxe provide franchise Services for certification of management systems according to these standards: ISO 9001, ISO 14001, IEC 17025 OHSAS 18001, ISO 22000, ISO/IEC 27001, in the country of a franchisee partner under mark LUXE Certification.
+                        To Know More Please Fill the form we will get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="row about-inner">
+                    <div class="col-12 col-md-5">
+                        <div class="about-img">
+                            <img src="assets/images/about.png" alt="about">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="about-text">
+                            <div class="about-content">
+                                <div class="title-sec">
+                                    <h3>About Us</h3>
+                                </div>
+                                <p>LUXE Certification is an independent Certification Body established as per requirement of IS/ISO/IEC 17021-1:2015 (Conformity Assessment-Requirements for Bodies providing Audit and Certification of Management Systems).
+                                    LUXE Certification is fast growing management Certification body in India. Luxe Certification is accredited by UG-AC & Provide Certificate for ISO 9001, ISO 14001, OHSAS 18001, ISO 20000, ISO 27001, ISO 50001, ISO 13485
+                                    and many More. Luxe Certification in Based in Delhi & offer a wide range of ISO Certification in Pan India.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container-fluid">
+                <div class="title-sec">
+                    <h3>Our Certification Services</h3>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fill Form To Get Free Sample</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="input-group mb-3 form-control">
+                                        <div class="input-group-prepend">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="input-group mb-3 form-control">
+                                        <div class="input-group-prepend">
+                                            <i class="far fa-envelope"></i>
+                                        </div>
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                    <div class="input-group mb-3 form-control">
+                                        <div class="input-group-prepend">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <input type="tel" placeholder="Phone">
+                                    </div>
+                                    <div class="input-group mb-3 form-control">
+                                        <div class="input-group-prepend">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </div>
+                                        <input type="text" placeholder="Company Name">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <form action="">
+                                    <a href="#" class="btn btn-four">Enquiry Now</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row service-inner">
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-9001-2015.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 9001:2015 For Rs.2000/-</h5>
+                                <p>ISO 9001 requirements for a quality management system(QMS)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-14001.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 14001:2015 For Rs.3500/-</h5>
+                                <p>ISO 14001 requirements for an effective environmental management system(EMS).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/18001.jfif" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>OHSAS For Rs.4000/-</h5>
+                                <p>OHSAS 18001 requirements for an occupational health and safety management systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-20000.jfif" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO/IEC 20000 for Rs.6,000/-</h5>
+                                <p>ISO 20000 requirements for the first international standard for service management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-27001.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 27001:2013 for Rs.6,000/-</h5>
+                                <p>ISO 27001:2013 requirements for an information security management system(ISMS) policy &amp; objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-29990-2010.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 29990:2010 for Rs.6,000/- </h5>
+                                <p>ISO 29990 requirements for Learning Services for non-formal Education and Training Service Providers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ce.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>CE Marking for Rs.8,000/-</h5>
+                                <p>CE Marking indicates that a product has been assessed by the manufacturer &amp; deemed to meet EU safety</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-22000-2018.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 22000 for Rs.6,000/-</h5>
+                                <p>ISO 22000 requirements for Food Safety Policy for your organization, developed by top management </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/HACCP.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>HACCP for Rs.6,000/-</h5>
+                                <p>HACCP requirements for Food Safety Policy for your organization, developed by top management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/gmp.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>GMP for Rs.6,000/-</h5>
+                                <p>GMP quality approach to eliminate instances of contamination, mixups, and errors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/bifma.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>BIFMA for Rs.6,000/-</h5>
+                                <p>The purpose of this document is to provide minimum requirements for claiming product conformance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/halal.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>HALAL for Rs.6,000/-</h5>
+                                <p>Halal Certification is an official form that refers to the Halal standardization of products and/or services </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/organic.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>Organic for Rs.6,000/-</h5>
+                                <p>Organic requirements for organic crops free from prohibited pesticides, herbicides, and fertilizers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/kosher.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>KOSHER for Rs.6,000/-</h5>
+                                <p>KOSHER requirements for a person trained and certified to butcher animals according to Jewish laws </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/rohs.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>RoHS for Rs.6,000/-</h5>
+                                <p>RoHS requirements for restricts the use of specific hazardous materials found in electrical &amp; electronic products </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/US-FDA.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>US FDA for Rs.6,000/-</h5>
+                                <p>US FDA requirements for Protecting the public health by ensuring the safety in drugs, medical devices, vaccines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/sa.jpg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>SA 8000:2014 for Rs.6,000/-</h5>
+                                <p>SA 8000 requirements for improving standards for workers and Safe workplaces and healthy working conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/iatf-16949-2016.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>IATF 16949:2016 for Rs.6,000/-</h5>
+                                <p>IATF 16949 requirements for defect prevention and reduction of variation and waste in the supply chain. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-50001-2011.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 50001:2011 for Rs.6,000/-</h5>
+                                <p>ISO 50001 requirements for Develop a policy for more efficient use of energy. Fix objectives to meet the policy </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-22716.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 22716:2007 for Rs.6,000/-</h5>
+                                <p>ISO 22716 requirements for the production, control, storage and shipment of cosmetic products quality and safety aspects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/iso-15189-2012.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 15189:2012 for Rs.6,000/-</h5>
+                                <p>ISO 15189 requirements for quality and competence in medical laboratories. Used by medical laboratories in developing their QMS. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-13485-2003.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 13485:2003 for Rs.6,000/-</h5>
+                                <p>ISO 13485 requirements for QMS where an firm needs to demonstrate its ability to provide medical devices and related services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="service-box" data-toggle="modal" data-target="#serviceModal">
+                            <div class="service-img">
+                                <img src="assets/images/services/ISO-15378-2017.png" alt="">
+                            </div>
+                            <div class="service-text">
+                                <h5>ISO 15378:2017 for Rs.6,000/-</h5>
+                                <p>ISO 15378 requirements for pharma sector to provide a QMS for suppliers of materials intended to be used as packaging.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="best">
+            <div class="container">
+                <div class="row best-inner">
+                    <div class="col-12 col-md-6 col-adjust">
+                        <div class="title-sec">
+                            <h3>Our Team</h3>
+                        </div>
+                        <div class="best-text">
+                            <p>Our Team Members are the heart and soul of our business. Our team’s guiding principles are integrity, respect, teamwork, achievement and innovation. Our guiding principles are the keys to our culture and to achieving our vision.</p>
+                            <p>We value our Team Members’ contributions, recognise and reward their efforts and provide a fun, satisfying and safe workplace.</p>
+                            <p>By living our values we will continue to “build the best” and earn the right to serve our clients tomorrow and into the future.</p>
+                            <p><span>Strength:</span></p>
+                            <p>We will put our 100% to work for our customer, so there will be no chances of error will take place.</p>
+                            <p><span>Vision:</span></p>
+                            <p>Our major vision is to make our name LUXE to reach in each and every cities and country.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-adjust">
+                        <div class="best-img">
+                            <img src="assets/images/best.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="certification">
+            <div class="container">
+                <div class="certification-inner">
+                    <div class="title-sec">
+                        <h3>Get ISO 9001 Certification For Rs.2000/-</h3>
+                    </div>
+                    <p>ISO Stands for Legal way Certification. ISO is an independent, non-governmental international organization with a membership of 162 national standard bodies.</p>
+                    <ul>
+                        <li>
+                            <a href="tel:+91-9306445488" class="btn btn-five">+91-9306445488</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-five">Enquiry Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="documentation">
+            <div class="container">
+                <div class="title-sec">
+                    <h3>Document Required For ISO Certification</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="doc-box">
+                            <p>Reg.n Proof of Business</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="doc-box">
+                            <p>Letter Head or Visiting Card</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="doc-box">
+                            <p>Invoice Details</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="doc-box">
+                            <p>Description of Business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-form">
+            <div class="container">
+                <div class="row home-form-inner">
+                    <div class="col-12 col-md-4 col-adjust">
+                        <div class="home-form-left">
+                            <h2>Do you want to know more about ISO</h2>
+                            <div class="title-sec">
+                                <h3>Fill form for Call Back</h3>
+                            </div>
+                            <p>Kindly fill in your details below, we will contact you shortly!</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-adjust">
+                        <div class="home-form-right">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="input-group mb-3 form-control">
+                                            <div class="input-group-prepend">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <input type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3 form-control">
+                                            <div class="input-group-prepend">
+                                                <i class="far fa-envelope"></i>
+                                            </div>
+                                            <input type="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="input-group mb-3 form-control">
+                                            <div class="input-group-prepend">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </div>
+                                            <input type="tel" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3 form-control">
+                                            <div class="input-group-prepend">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </div>
+                                            <input type="text" placeholder="Company Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-four">Submit Now</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row footer-inner">
+                    <div class="col-12 col-md-4">
+                        <div class="footer-content footer-left">
+                            <p>&copy; 2021 <span>Legal Way Certification.</span> All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer-content footer-middle">
+                            <p><span>Address:</span> 182/1 South Vanasthali, Ballupur, Dehradun, Uttarakhand, India</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer-content footer-right">
+                            <ul>
+                                <li>
+                                    <p>Follow Us: </p>
+                                </li>
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+            })
+        })
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/8aa71aba32.js " crossorigin="anonymous"></script>
+</body>
+
+</html>
